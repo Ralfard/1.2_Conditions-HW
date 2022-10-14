@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+        document.write("Task 5 Запросить у пользователя пятиразрядное число и опреде-лить, является ли оно палиндромом.")
+
+        number=+prompt("Введите пятизначное число:","")
+        fifth=number%10
+        fourth=number%100-fifth
+        third=number%1000-fifth-fourth
+        second=number%10000-fifth-fourth-third                // Разделяем числа по разрядам
+        first=number-second-fifth-fourth-third
+
+        first/=10000         
+        second/=1000                                          //Превращаем все числа в однозначные
+        third/=100         
+        fourth/=10         
+
+        if(number<10000 || number>99999)                     // проверяем коректность числа
+            alert("Введённо не пятизначное число")
+        else if(fifth===first && second===fourth)        
+            alert("Введённое число является полиндромом")    // положительный ответ
+        else
+            alert("Введённое число неявляется полиндромом")  // отрицательный
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+        document.write("Task 1 Запросить у пользователя его возраст и определить, кем он является: ребенком (0–12), подростком (12–18), взрослым (18-60) или пенсионером (60+...)")
+        age=+prompt("Сколько вам лет?","")
+        if(age>=0 && age<=12)
+        alert("Вы ребёнок")
+        else if(age>12 && age<18)
+        alert("Вы подросток")
+        else if(age>=18 && age<60)
+        alert("Вы взрослый")
+        else if(age>=60)
+        alert("Вы пенсионер")
+        else
+        alert("Введено не коректное значение")
+    </script>
+</body>
+</html>

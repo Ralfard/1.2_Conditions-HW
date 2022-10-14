@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+        document.write("Task 3 Запросить у пользователя трехзначное и число и проверить, есть ли в нем одинаковые цифры.")
+
+        number=+prompt("Введите трёхзначное число что бы проверить его на наличие одинаковых цифр","")
+        last=number%10
+        midl=(number%100-last)
+        first=(number-midl-last)
+        midl/=10
+        first/=100
+        if(number<100||number>999 )                             //Проверяем условие что число трёхзначное
+        alert("Вы ввели не трехзначное число")                           
+        else if(last==midl || midl==first || first==last)       //ищем одинаковые цифры 
+        alert("Число содержит одинаковые цифры")    
+        else                                                    //выводим если одинаковых цифр не найдено
+        alert("Одинаковых цифр не найдено")
+        
+    </script>
+</body>
+</html>

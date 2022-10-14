@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+        document.write("Task 6 Написать конвертор валют. Пользователь вводит количество USD, выбирает, в какую валюту хочет перевести: EUR,UAN или AZN, и получает в ответ соответствующую сумму.")
+
+        cash=+prompt("Введите количество долларов которое вы хотите перевести","100")
+        currency=prompt("Введите валюту в которую вы хотите перевести","EUR")
+        var EUR=0.88;
+        var AZN=1.70;
+        var UAN=6.36;
+        if(cash<0)
+        alert("Введите положительное количество валюты")
+        else if(currency==="EUR"){
+        cash*=EUR;
+        alert("Вы получите "+cash+"EUR")
+        }
+        else if(currency==="AZN"){
+        cash*=AZN;
+        alert("Вы получите "+cash+"AZN")
+        }
+        else if(currency==="UAN"){
+        cash*=UAN;
+        alert("Вы получите "+cash+"UAN")
+        }
+        else
+        alert("Введено не корректное значение")
+
+    </script>
+</body>
+</html>
